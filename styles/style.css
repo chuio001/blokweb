@@ -1,5 +1,88 @@
+@font-face {
+    font-family: "Klarna Text";
+    font-weight: 400;
+    src: url("https://x.klarnacdn.net/ui/fonts/v1.2/KlarnaText-Regular.woff2") format('woff2'),
+         url("https://x.klarnacdn.net/ui/fonts/v1.2/KlarnaText-Regular.woff") format('woff');
+}
+@font-face {
+    font-family: "Klarna Text";
+    font-weight: 500;
+    src: url("https://x.klarnacdn.net/ui/fonts/v1.2/KlarnaText-Medium.woff2") format('woff2'),
+         url("https://x.klarnacdn.net/ui/fonts/v1.2/KlarnaText-Medium.woff") format('woff');
+}
+@font-face {
+    font-family: "Klarna Text";
+    font-weight: 700;
+    src: url("https://x.klarnacdn.net/ui/fonts/v1.2/KlarnaText-Bold.woff2") format('woff2'),
+         url("https://x.klarnacdn.net/ui/fonts/v1.2/KlarnaText-Bold.woff") format('woff');
+}
 /* CSS Document */
 *, *::after, *::before {
-  box-sizing:border-box;  
+  box-sizing:border-box;
 }
 
+body {
+    font-family: "Klarna Text","Helvetica Neue";
+    background: white;
+
+}
+
+.landingspagina {
+    background: #fbb3c3;
+
+}
+
+
+a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.button1 {
+    width: 12.5em;
+    height: 3.75em;
+    display: block;
+    text-align: center;
+    background-color: black;
+    color: white;
+    line-height: 60px;
+
+}
+
+.button1:hover {
+    background-color: white;
+    color: black;
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+}
+
+.button2 {
+    width: 12.5em;
+    height: 3.75em;
+    display: block;
+    text-align: center;
+    background-color: white;
+    color: black;
+    line-height: 60px;
+    border-style: solid;
+    border-color: lightgray;
+    border-width: thin;
+
+}
+
+.button2:hover {
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+ul {
+    display: flex;
+
+}
+
+img {
+    max-width: 100%;
+
+}

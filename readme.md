@@ -6,7 +6,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. -bron 1-
+1. Internetstandaarden Screencast https://cmda.github.io/internetstandaarden-screencasts/
 2. -bron 2-
 3. -...-
 
@@ -38,11 +38,11 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+Ik wist eerlijk gezegd niet waar ik moest beginnen. HTML en CSS is echt een lange tijd geleden. De filmpjes van Internetstandaarden heeft enorm geholpen om een eerste stap te zetten.
 
 **Screenshot(s):**
 
--screenshot(s) van hoe ver je bent-
+![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/voortgang1.png)
 
 ### Agenda voor meeting
 
@@ -64,7 +64,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s):**
 
-![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/screenshots_klarna)
+![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/screenshots_klarna.png)
 
 **Breakdown-schets(en):**
 
