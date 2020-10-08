@@ -1,11 +1,15 @@
 /* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
 }
 
 
 
 /* Global styling */
+
 body {
     background-color: #fcf8f2;
     font-family: "Open Sans", "Sans Serif";
@@ -28,8 +32,24 @@ ul {
     border-radius: 4px;
 }
 
-h1, h2, h3 {
-font-family: 'Poppins', sans-serif;
+.btn-groen a {
+    background-color: #114d4d;
+        border-radius: 120px;
+    padding: 15px 40px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.btn-groen {
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
 }
 
@@ -37,12 +57,12 @@ h1 {
     color: #114d4d;
     font-size: 6rem;
     margin-bottom: 0;
-     line-height: 1;
+    line-height: 1;
 }
 
 h2 {
     color: #114d4d;
-       font-size: 4rem;
+    font-size: 4rem;
     line-height: 1;
     margin: 0;
 }
@@ -58,6 +78,20 @@ h3 {
 p {
     color: #114d4d;
     font-size: 1.2rem;
+}
+
+.dikgedrukt {
+    font-family: 'Poppins';
+    color: #114d4d;
+    font-size: 1.15rem;
+    font-weight: 500;
+
+}
+
+.cijfers {
+    color: #49ada1;
+    font-size: 2.25rem;
+
 }
 
 /* Navigatie */
@@ -79,7 +113,7 @@ p {
 }
 
 .navbar ul li a {
-font-weight: 900;
+    font-weight: 900;
     text-transform: uppercase;
     color: #114d4d;
     text-decoration: none;
@@ -88,6 +122,7 @@ font-weight: 900;
 }
 
 /* Header */
+
 .header {
     flex-direction: column;
     display: flex;
@@ -116,8 +151,10 @@ font-weight: 900;
 }
 
 /* Section Verspilling */
+
 .verspilling {
     display: flex;
+    flex-direction: column;
     align-items: center;
 
 }
@@ -129,27 +166,17 @@ font-weight: 900;
 }
 
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
+/* Feiten */
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    .container {
-    width: 1140px;
-    }
-
-    .navbar {
-    width: 1200px;
-}
-    .header {
+.facts-wrapper {
+    display: flex;
     flex-direction: column;
-    width: 835px;
+    justify-content: center;
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
-
-
+.wrapper-item {
+    flex-basis: 100%;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
