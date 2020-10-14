@@ -23,8 +23,17 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Voortgang 3 (week 6)
-
--same as voortgang 1-
+Ontvangen feedback:
+- Readme bijhouden
+- Mobile first
+- Stop alles in de main
+- Gebruik nav ipv div class nav
+- Zet je nav in de header
+- Gebruik sections ipv divs
+- Gebruik zo min mogelijk classes
+- Denk aan een micro-interactie, in dit geval is een hamburgermenu voldoende
+- Gebruik zo min mogelijk px, gebruik em
+- Vergeet niet de bronvermelding
 
 
 
