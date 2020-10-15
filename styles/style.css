@@ -12,14 +12,13 @@
 
 body {
     background-color: #fcf8f2;
-    font-family: "Open Sans", "Sans Serif";
+    font-family: 'Open Sans', sans-serif;
 }
 
-.container {
-    display: block;
-    width: 100%;
-    margin: auto;
+main {
+    margin: 1.5em;
 }
+
 
 ul {
     list-style-type: none;
@@ -34,7 +33,7 @@ ul {
 
 .btn-groen a {
     background-color: #114d4d;
-        border-radius: 120px;
+    border-radius: 120px;
     padding: 15px 40px;
     text-decoration: none;
     color: white;
@@ -48,36 +47,43 @@ ul {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
 }
 
 h1 {
     color: #114d4d;
-    font-size: 6rem;
+    font-size: 3.5rem;
     margin-bottom: 0;
     line-height: 1;
+    text-align: center;
 }
 
 h2 {
     color: #114d4d;
-    font-size: 4rem;
+    font-size: 2.25rem;
     line-height: 1;
     margin: 0;
 }
 
 h3 {
     color: #49ada1;
-    font-size: 1.85rem;
+    font-size: 1.5rem;
     font-weight: 400;
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
+
+h4 {
+    color: #000000;
+}
+
 p {
     color: #114d4d;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .dikgedrukt {
@@ -96,17 +102,24 @@ p {
 
 /* Navigatie */
 
-.navbar {
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .logo img {
-    height: 50px;
     width: auto;
+    height: 2.8em;
 }
 
+.hamburger-menu img {
+    width: auto;
+    height: 1.7em;
+}
+
+/*
 .navbar ul li {
     display: inline-block;
     padding-left: 20px
@@ -120,9 +133,11 @@ p {
     font-family: 'Poppins', sans-serif;
 
 }
+*/
 
 /* Header */
 
+/*
 .header {
     flex-direction: column;
     display: flex;
@@ -130,11 +145,12 @@ p {
     text-align: center;
     margin: 50px auto 0 auto;
 }
+*/
 
-.foodbag {
-    width: 600px;
+.red-eten img {
+    width: 22em;
     align-self: center;
-    margin-top: -50px;
+    margin-top: 0px;
 }
 
 .download-btn {
@@ -147,7 +163,7 @@ p {
 
 .download-btn img {
     width: 120px;
-    margin: 0 10px
+    margin: 1.5em 0.1em;
 }
 
 /* Section Verspilling */
@@ -159,24 +175,85 @@ p {
 
 }
 
-.foodbowl {
-    width: 417px;
+.verspilling img {
+    width: 25em;
     height: auto;
-    margin-right: 50px;
+    padding: 2em;
 }
 
+.verspilling h2 {
+    text-align: center;
+    margin-bottom: 1.5em;
+
+
+}
 
 /* Feiten */
 
-.facts-wrapper {
+.feiten-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.wrapper-item {
-    flex-basis: 100%;
+.feiten-wrapper h2 {
     text-align: center;
-    margin: 20px;
-    padding: 20px;
+    margin-top: 1em;
+}
+
+.feiten-wrapper p {
+    text-align: center;
+    margin: 0 2em;
+
+}
+
+/* Artikels */
+
+.artikelen h2 {
+    font-size: 1.9rem;
+}
+
+.artikelen h3 {
+    font-size: 1.25rem;
+}
+
+.artikel-foto {
+    border-radius: 1em;
+    align-items: center;
+    width: 22em;
+    height: auto;
+}
+
+/* Footer */
+
+footer ul a {
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer ul {
+    text-align: center;
+}
+
+/* Detailpagina De Movement */
+
+.movement img {
+    width: 15em;
+    height: auto;
+}
+
+.lees-meer-artikelen img {
+    position: relative;
+    width: 20em;
+    height: auto;
+    border-radius: 1em;
+
+}
+
+.databank img {
+    width: 15em;
+    height: auto;
+
 }

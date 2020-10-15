@@ -8,7 +8,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Bronnenlijst
 1. Internetstandaarden Screencast https://cmda.github.io/internetstandaarden-screencasts/
 2. Building Website Headers with CSS Flexbox https://ishadeed.com/article/website-headers-flexbox/
-3. -...-
+3. How to use ampersands in HTML
+https://mrcoles.com/blog/how-use-amersands-html-encode/
 
 
 
