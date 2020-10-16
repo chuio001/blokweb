@@ -164,6 +164,8 @@ nav {
 .download-btn img {
     width: 120px;
     margin: 1.5em 0.1em;
+     width: 7em;
+    align-self: center;
 }
 
 /* Section Verspilling */
@@ -245,7 +247,6 @@ footer ul {
 }
 
 .lees-meer-artikelen img {
-    position: relative;
     width: 20em;
     height: auto;
     border-radius: 1em;
@@ -257,3 +258,53 @@ footer ul {
     height: auto;
 
 }
+
+/* Media queries */
+@media only screen and (min-width: 1026px) {
+    header {
+        padding: 1.5em 5em 0em;
+    }
+
+    main {
+        padding: 4.5em;
+    }
+
+    h1 {
+        font-size: 6rem;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 1.85rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .verspilling {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .verspilling h2 {
+        margin-top: 1em;
+    }
+
+    .feiten-wrapper {
+        display: flex;
+    flex-direction: row;
+
+    }
+
+    .artikel-foto {
+        display: flex;
+
+    }
+    }
+
+
