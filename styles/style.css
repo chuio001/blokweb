@@ -29,6 +29,7 @@ ul {
     padding: 8px 16px;
     color: white;
     border-radius: 4px;
+
 }
 
 .btn-groen a {
@@ -43,6 +44,7 @@ ul {
 
 .btn-groen {
     text-align: center;
+
 }
 
 h1,
@@ -106,6 +108,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 1.5em;
 
 }
 
@@ -181,6 +184,7 @@ nav {
     width: 25em;
     height: auto;
     padding: 2em;
+
 }
 
 .verspilling h2 {
@@ -224,6 +228,7 @@ nav {
     align-items: center;
     width: 22em;
     height: auto;
+    box-shadow: 0 12px 40px 0 rgba(95,95,95,.5)
 }
 
 /* Footer */
