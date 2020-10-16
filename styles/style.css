@@ -19,27 +19,21 @@ main {
     margin: 1.5em;
 }
 
-
 ul {
     list-style-type: none;
 }
 
-.btn {
-    background-color: lightgreen;
-    padding: 8px 16px;
-    color: white;
-    border-radius: 4px;
-
-}
-
-.btn-groen a {
+.btn-groen {
     background-color: #114d4d;
     border-radius: 120px;
     padding: 15px 40px;
     text-decoration: none;
     color: white;
     text-transform: uppercase;
-
+    white-space: nowrap;
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
 }
 
 .btn-groen {
@@ -88,6 +82,10 @@ p {
     font-size: 1rem;
 }
 
+header nav ul {
+    display: none;
+}
+
 .dikgedrukt {
     font-family: 'Poppins';
     color: #114d4d;
@@ -122,13 +120,12 @@ nav {
     height: 1.7em;
 }
 
-/*
-.navbar ul li {
+header ul li {
     display: inline-block;
     padding-left: 20px
 }
 
-.navbar ul li a {
+header ul li a {
     font-weight: 900;
     text-transform: uppercase;
     color: #114d4d;
@@ -136,24 +133,11 @@ nav {
     font-family: 'Poppins', sans-serif;
 
 }
-*/
 
-/* Header */
-
-/*
-.header {
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 50px auto 0 auto;
-}
-*/
-
-.red-eten img {
-    width: 22em;
-    align-self: center;
-    margin-top: 0px;
+.red-eten-foto {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
 }
 
 .download-btn {
@@ -167,7 +151,7 @@ nav {
 .download-btn img {
     width: 120px;
     margin: 1.5em 0.1em;
-     width: 7em;
+    width: 7em;
     align-self: center;
 }
 
@@ -215,8 +199,13 @@ nav {
 
 /* Artikels */
 
+.artikelen {
+    margin: 50px 0;
+}
+
 .artikelen h2 {
     font-size: 1.9rem;
+    margin-top: 20px;
 }
 
 .artikelen h3 {
@@ -226,9 +215,9 @@ nav {
 .artikel-foto {
     border-radius: 1em;
     align-items: center;
-    width: 22em;
+    width: 100%;
     height: auto;
-    box-shadow: 0 12px 40px 0 rgba(95,95,95,.5)
+    box-shadow: 0 12px 40px 0 rgba(95, 95, 95, .5);
 }
 
 /* Footer */
@@ -241,6 +230,11 @@ footer ul a {
 }
 
 footer ul {
+    padding-left: 0;
+    text-align: center;
+}
+
+footer h4 {
     text-align: center;
 }
 
@@ -252,24 +246,70 @@ footer ul {
 }
 
 .lees-meer-artikelen img {
-    width: 20em;
+    width: 100%;
     height: auto;
     border-radius: 1em;
-
 }
 
 .databank img {
-    width: 15em;
+    width: 100%;
     height: auto;
+}
 
+@media only screen and (min-width: 720px) {}
+
+@media only screen and (min-width: 960px) {
+    .hamburger-menu {
+        display: none;
+    }
+    header {
+        margin: 0 auto;
+        display: block;
+        padding: 0 3em;
+    }
+    header nav ul {
+        display: unset;
+    }
+
+    .red-eten-foto {
+        width: 22em;
+    }
+    .artikelen {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .artikelen:last-of-type {
+        flex-direction: row-reverse;
+    }
+
+    .artikel-foto {
+        width: auto;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .artikelen section {
+        padding-left: 50px;
+    }
+    .artikelen:last-of-type section {
+        padding-right: 50px;
+        padding-left: 0;
+    }
+
+    .lees-meer-artikelen img {
+        width: 20em;
+    }
+
+    .databank img {
+        width: 15em;
+    }
 }
 
 /* Media queries */
-@media only screen and (min-width: 1026px) {
-    header {
-        padding: 1.5em 5em 0em;
-    }
 
+@media only screen and (min-width: 1140px) {
     main {
         padding: 4.5em;
     }
@@ -302,14 +342,6 @@ footer ul {
 
     .feiten-wrapper {
         display: flex;
-    flex-direction: row;
-
+        flex-direction: row;
     }
-
-    .artikel-foto {
-        display: flex;
-
-    }
-    }
-
-
+}
