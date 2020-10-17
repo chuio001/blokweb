@@ -10,6 +10,9 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 2. Building Website Headers with CSS Flexbox https://ishadeed.com/article/website-headers-flexbox/
 3. How to use ampersands in HTML
 https://mrcoles.com/blog/how-use-amersands-html-encode/
+4. Blockquote tag
+https://www.w3schools.com/tags/tag_blockquote.asp
+
 
 
 
@@ -21,6 +24,18 @@ https://mrcoles.com/blog/how-use-amersands-html-encode/
 
 -screenshot(s) van je eindresultaat-
 
+
+## Extra feedbackgesprek - Voortgang (Herfstvakantie)
+Ontvangen feedback:
+- Zoveel mogelijk classes wegwerken
+- Bij het onderdeel van feiten en cijfers over Too Goo To Go: class op de H2 weghalen. Aanroepen in de css met .feiten-wrapper h2
+- Gebruik een strong tag voor de dikgedrukte cijfers, deze kun je in de css zelf stylen
+- Class op de foto van foodbag kan weg, en aanspreken met .red-eten > img
+- Gebruik button tag in plaats van a
+- Div's wegwerken
+- Voor de quote op de detailpagina kun je gebruikmaken van een blockquote tag, deze kun je in de css weer zelf stylen zoals je wilt
+- Gebruik geen px
+- Voor de detailpagina met de articles --> height: 50vh; background-image: url('url.png'); background-size: cover; width: 50vw;
 
 
 ## Voortgang 3 (week 6)
@@ -82,6 +97,4 @@ Ik wist eerlijk gezegd niet waar ik moest beginnen. HTML en CSS is echt een lang
 
 ![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/dummy-image.svg)
 
-**Breakdown-schets(en):**
 
-![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/dummy-image.svg)
