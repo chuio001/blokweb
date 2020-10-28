@@ -29,6 +29,9 @@ https://www.w3schools.com/tags/tag_article.asp
 https://css-tricks.com/image-under-text/
 13. CSS hsla() Function
 https://www.w3schools.com/cssref/func_hsla.asp
+14. HTML hr tag
+https://www.w3schools.com/tags/tag_hr.asp
+
 
 
 

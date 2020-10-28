@@ -104,23 +104,12 @@ p {
 
 /* Header */
 
-.hamburger__items {
+.hamburger-items {
     display: none;
 }
 
 
 /* Navigatie */
-
-/*
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: fit-content;
-    background-color: white;
-}
-*/
 
 nav {
     display: flex;
@@ -142,38 +131,28 @@ nav {
 
 
 @media only screen and (max-width: 960px) {
-    .hamburger__items {
+    .hamburger-items {
         padding: 0 0.625em;
-        min-height: 0;
-        max-height: 0;
         height: auto;
         overflow: hidden;
-        transition: ease-in-out .3s;
-        transform-origin: top;
-        transform: scaleY(0);
         position: fixed;
         top: 4.6em;
         left: 0;
         right: 0;
         background-color: white;
-        border-bottom: .06em solid #ededed;
-        border-top: .06em solid #ededed;
     }
 
     .nav-show {
-        transition: ease-in-out .3s;
         display: block;
         max-height: 100%;
         height: auto;
-        min-height: 100%;
-        transform: scaleY(1);
     }
 
-    .hamburger__items ul {
+    .hamburger-items ul {
         padding-left: 0;
     }
 
-    .hamburger__items li {
+    .hamburger-items li {
         display: block;
         margin: 0.625em 0;
         text-align: left;
@@ -181,11 +160,11 @@ nav {
 }
 
 
-.hamburger__items a {
+.hamburger-items a {
     position: relative;
 }
 
-.hamburger__items a::before {
+.hamburger-items a::before {
     content: "";
     position: absolute;
     width: 0;
@@ -197,11 +176,11 @@ nav {
     transition: all .3s ease-in-out;
 }
 
-.hamburger__items a:hover {
+.hamburger-items a:hover {
     transition: .1s;
 }
 
-.hamburger__items a:hover:before {
+.hamburger-items a:hover:before {
     width: 100%;
     visibility: visible;
 }
@@ -296,12 +275,12 @@ strong {
 /* Artikelen */
 
 .home-artikelen {
-    margin: 50px 0;
+    margin: 3em 0;
 }
 
 .home-artikelen h2 {
     font-size: 1.9rem;
-    margin-top: 20px;
+    margin-top: 1.25em;
 }
 
 .home-artikelen h3 {
@@ -333,11 +312,29 @@ footer ul a:hover {
 
 footer ul {
     padding-left: 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer section {
+    flex-basis: 100%;
     text-align: center;
 }
 
-footer h4 {
-    text-align: center;
+@media only screen and (min-width: 960px) {
+    footer {
+        flex-direction: row;
+    }
+    footer section {
+        flex-basis: 25%;
+        text-align: left;
+    }
+    footer {
+        text-align: left;
+    }
 }
 
 /* Detailpagina De Movement */
@@ -441,6 +438,8 @@ blockquote {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    margin: 50px 0;
 }
 
 .kennisdatabank img {
@@ -450,12 +449,10 @@ blockquote {
 
 .kennisdatabank h2 {
     font-size: 2rem;
-    text-align: center;
 }
 
 .kennisdatabank h3 {
     font-size: 1.25rem;
-    text-align: center;
     line-height: 1;
 }
 
@@ -475,6 +472,8 @@ blockquote {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    margin: 50px 0;
 }
 
 /* Media queries */
@@ -498,7 +497,7 @@ blockquote {
         padding: 0 3em;
     }
 
-    .hamburger__items {
+    .hamburger-items {
         display: unset;
     }
 
@@ -507,8 +506,8 @@ blockquote {
     }
 
     main {
-        margin-left: 9em;
-        margin-right: 9em;
+        margin-left: 5em;
+        margin-right: 5em;
     }
 
     .home-artikelen {
@@ -528,10 +527,10 @@ blockquote {
     }
 
     .home-artikelen section {
-        padding-left: 50px;
+        padding-left: 3em;
     }
     .home-artikelen:last-of-type section {
-        padding-right: 50px;
+        padding-right: 3em;
         padding-left: 0;
     }
 
@@ -625,24 +624,50 @@ blockquote {
         font-weight: 500;
     }
 
-    .kennisdatabank {
-        display: flex;
-        flex-direction: row;
-    }
 
     .kennisdatabank h2 {
         font-size: 2.5rem;
-        text-align: center;
+        text-align: left;
     }
 
     .kennisdatabank h3 {
         font-family: 'Poppins';
         font-size: 1.25rem;
-        text-align: center;
     }
+
+    .kennisdatabank {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .kennisdatabank section {
+        padding-left: 5em;
+    }
+
+    .kennisdatabank button {
+        margin-right: 11em;
+
+    }
+
+    section.contact {
+        padding-right: 3em;
+        padding-left: 0;
+        margin: 50px;
+    }
+
+    section.contact section {
+        flex-basis: 60%;
+    }
+
 
     .contact {
         flex-direction: row-reverse;
+        text-align: left;
+    }
+
+    .contact p {
+        font-size: 1.75rem;
+        text-align: left;
     }
 
     .pijlers-item h2 {
@@ -652,4 +677,9 @@ blockquote {
 
     }
 
+}
+
+hr {
+    border-style: solid;
+    border-color: gainsboro;
 }
