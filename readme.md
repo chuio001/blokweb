@@ -4,7 +4,6 @@
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
 
 
-
 ## Bronnenlijst
 1. Internetstandaarden Screencast https://cmda.github.io/internetstandaarden-screencasts/
 2. Building Website Headers with CSS Flexbox https://ishadeed.com/article/website-headers-flexbox/
@@ -12,6 +11,24 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 https://mrcoles.com/blog/how-use-amersands-html-encode/
 4. Blockquote tag
 https://www.w3schools.com/tags/tag_blockquote.asp
+5. CSS Background image URL to images folder
+https://community-archive.progress.com/forums/00296/49005.html
+6. Button tag
+https://www.w3schools.com/tags/tag_button.asp
+7. CSS Buttons
+https://www.w3schools.com/css/css3_buttons.asp
+8. Apply CSS to button element with certain class
+https://stackoverflow.com/questions/5512055/apply-css-to-button-element-with-certain-class
+9. CSS opacity Property
+https://www.w3schools.com/cssref/css3_pr_opacity.asp
+10. CSS Transitions
+https://www.w3schools.com/css/css3_transitions.asp
+11. HTML Article tag
+https://www.w3schools.com/tags/tag_article.asp
+12. Show image under text
+https://css-tricks.com/image-under-text/
+13. CSS hsla() Function
+https://www.w3schools.com/cssref/func_hsla.asp
 
 
 
@@ -94,7 +111,3 @@ Ik wist eerlijk gezegd niet waar ik moest beginnen. HTML en CSS is echt een lang
 **Je opdracht:** https://www.toogoodtogo.nl/
 
 **Screenshot(s):**
-
-![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/dummy-image.svg)
-
-
