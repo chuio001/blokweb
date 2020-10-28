@@ -24,7 +24,7 @@ ul {
 }
 
 button.btn-groen {
- background-color: #114d4d;
+    background-color: #114d4d;
     border: none;
     color: white;
     padding: 1em 2em;
@@ -104,12 +104,23 @@ p {
 
 /* Header */
 
-header nav ul {
+.hamburger__items {
     display: none;
 }
 
 
 /* Navigatie */
+
+/*
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+}
+*/
 
 nav {
     display: flex;
@@ -129,9 +140,75 @@ nav {
     height: 1.7em;
 }
 
+
+@media only screen and (max-width: 960px) {
+    .hamburger__items {
+        padding: 0 0.625em;
+        min-height: 0;
+        max-height: 0;
+        height: auto;
+        overflow: hidden;
+        transition: ease-in-out .3s;
+        transform-origin: top;
+        transform: scaleY(0);
+        position: fixed;
+        top: 4.6em;
+        left: 0;
+        right: 0;
+        background-color: white;
+        border-bottom: .06em solid #ededed;
+        border-top: .06em solid #ededed;
+    }
+
+    .nav-show {
+        transition: ease-in-out .3s;
+        display: block;
+        max-height: 100%;
+        height: auto;
+        min-height: 100%;
+        transform: scaleY(1);
+    }
+
+    .hamburger__items ul {
+        padding-left: 0;
+    }
+
+    .hamburger__items li {
+        display: block;
+        margin: 0.625em 0;
+        text-align: left;
+    }
+}
+
+
+.hamburger__items a {
+    position: relative;
+}
+
+.hamburger__items a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0.188em;
+    bottom: 0;
+    left: 0;
+    background-color: #49ada1;
+    visibility: hidden;
+    transition: all .3s ease-in-out;
+}
+
+.hamburger__items a:hover {
+    transition: .1s;
+}
+
+.hamburger__items a:hover:before {
+    width: 100%;
+    visibility: visible;
+}
+
 header ul li {
     display: inline-block;
-    padding-left: 20px
+    padding-left: 1.25em;
 }
 
 header ul li a {
@@ -140,7 +217,6 @@ header ul li a {
     color: #114d4d;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
-
 }
 
 .red-eten > img {
@@ -373,12 +449,12 @@ blockquote {
 }
 
 .kennisdatabank h2 {
-font-size: 2rem;
+    font-size: 2rem;
     text-align: center;
 }
 
 .kennisdatabank h3 {
-font-size: 1.25rem;
+    font-size: 1.25rem;
     text-align: center;
     line-height: 1;
 }
@@ -421,7 +497,8 @@ font-size: 1.25rem;
         display: block;
         padding: 0 3em;
     }
-    header nav ul {
+
+    .hamburger__items {
         display: unset;
     }
 
@@ -569,12 +646,10 @@ font-size: 1.25rem;
     }
 
     .pijlers-item h2 {
-    color: white;
-    text-align: center;
-    padding-top: 1em;
+        color: white;
+        text-align: center;
+        padding-top: 1em;
 
-}
-
-
+    }
 
 }
