@@ -600,6 +600,13 @@ blockquote {
         margin-bottom: 8em;
     }
 
+    .quote section {
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    }
+
 
 
     blockquote {
@@ -616,6 +623,7 @@ blockquote {
     .quote img {
         width: 20em;
         height: auto;
+        max-height: 20em;
     }
 
 
